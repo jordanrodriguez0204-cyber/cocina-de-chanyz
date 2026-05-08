@@ -11,8 +11,6 @@ export interface Creation {
 export const creations: Creation[] = [
   /* ── Mariage & Célébrations ── */
   { id: 1,  titre: 'Mariage élégant 3 étages',     categorie: 'mariage',   image: '/images/gateaux/mariage-3-etages.jpg',    featured: true },
-  { id: 2,  titre: 'Mariage roses roses',           categorie: 'mariage',   image: '/images/gateaux/mariage-roses-roses.jpg' },
-  { id: 3,  titre: 'Mariage rose & or',             categorie: 'mariage',   image: '/images/gateaux/mariage-rose-or.jpg' },
   { id: 4,  titre: 'Mariage fuchsia',               categorie: 'mariage',   image: '/images/gateaux/mariage-fuchsia.jpg' },
 
   /* ── Anniversaires Adultes ── */
@@ -23,9 +21,7 @@ export const creations: Creation[] = [
 
   /* ── Anniversaires Enfants ── */
   { id: 9,  titre: 'Minecraft',                     categorie: 'enfant',    image: '/images/gateaux/enfant-minecraft.jpg',    featured: true },
-  { id: 10, titre: 'Licorne arc-en-ciel',           categorie: 'enfant',    image: '/images/gateaux/enfant-licorne.jpg' },
   { id: 11, titre: 'Simba — Le Roi Lion',           categorie: 'enfant',    image: '/images/gateaux/enfant-simba.jpg' },
-  { id: 12, titre: 'Winnie l\'ourson',              categorie: 'enfant',    image: '/images/gateaux/enfant-winnie.jpg' },
   { id: 13, titre: 'Safari Duarte',                 categorie: 'enfant',    image: '/images/gateaux/enfant-safari-duarte.jpg' },
   { id: 14, titre: 'Safari Gianna',                 categorie: 'enfant',    image: '/images/gateaux/enfant-safari-gianna.jpg' },
   { id: 15, titre: 'Miraculous Ladybug — Maelyss',  categorie: 'enfant',    image: '/images/gateaux/enfant-miraculous.jpg',   featured: true },
