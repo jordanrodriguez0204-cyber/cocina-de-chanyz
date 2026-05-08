@@ -1,11 +1,12 @@
-import HeroSection        from '@/components/HeroSection';
-import WhyUsSection       from '@/components/WhyUsSection';
-import GateauxGallery     from '@/components/GateauxGallery';
-import SpecialitesPeru    from '@/components/SpecialitesPeru';
-import CommanderSection   from '@/components/CommanderSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
-import InstagramSection   from '@/components/InstagramSection';
-import CTAFinalSection    from '@/components/CTAFinalSection';
+import HeroSection          from '@/components/HeroSection';
+import WhyUsSection         from '@/components/WhyUsSection';
+import GateauxGallery       from '@/components/GateauxGallery';
+import SpecialitesPeru      from '@/components/SpecialitesPeru';
+import NotreHistoireSection from '@/components/NotreHistoireSection';
+import CommanderSection     from '@/components/CommanderSection';
+import TestimonialsSection  from '@/components/TestimonialsSection';
+import InstagramSection     from '@/components/InstagramSection';
+import CTAFinalSection      from '@/components/CTAFinalSection';
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <WhyUsSection />
       <GateauxGallery />
       <SpecialitesPeru />
+      <NotreHistoireSection />
       <CommanderSection />
       <TestimonialsSection />
       <InstagramSection />

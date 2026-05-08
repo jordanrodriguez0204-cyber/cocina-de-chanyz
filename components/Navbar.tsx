@@ -46,7 +46,7 @@ export default function Navbar() {
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="flex items-center"
             >
-              <div className="relative w-[130px] h-[44px]">
+              <div className="relative w-[150px] h-[50px]">
                 <Image
                   src={scrolled ? '/images/logo-bordeaux.png' : '/images/logo-blanc.png'}
                   alt="Cocina de Chanyz"

@@ -43,7 +43,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex flex-wrap items-center justify-center gap-2 mb-8"
         >
-          {['Fait maison', 'Genève 🇨🇭', 'Sur commande'].map((badge) => (
+          {['Fait maison', 'Genève 🇨🇭', 'Preparado con amor 🤍'].map((badge) => (
             <span
               key={badge}
               className="bg-white/15 backdrop-blur-md border border-white/25 text-white text-[11px] font-semibold tracking-wide px-3.5 py-1.5 rounded-full"
@@ -70,9 +70,10 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-white/70 text-[16px] sm:text-[18px] leading-relaxed mb-10 max-w-lg"
+          className="text-white/75 text-[16px] sm:text-[18px] leading-relaxed mb-10 max-w-lg"
         >
-          Préparés avec amour pour vos moments spéciaux.
+          Préparés avec amour pour vos moments spéciaux.<br className="hidden sm:block" />
+          <span className="text-white/55 text-[14px] sm:text-[15px] italic">Une touche latino dans chaque création.</span>
         </motion.p>
 
         {/* CTAs */}

@@ -4,34 +4,34 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    nom: 'Sophie M.',
-    event: 'Mariage',
+    nom: 'Sofia R.',
+    ville: 'Genève',
     note: 5,
-    texte: 'Le gâteau de mariage était absolument magnifique et délicieux. Tous nos invités ont été bluffés. Chanyz a parfaitement reproduit notre vision. Je recommande les yeux fermés !',
+    texte: 'Le gâteau était magnifique et délicieux, merci encore ❤️ Toute la famille a adoré, on reviendra c\'est sûr !',
   },
   {
-    nom: 'Carlos R.',
-    event: 'Anniversaire 60 ans',
+    nom: 'Camila T.',
+    ville: 'Vernier',
     note: 5,
-    texte: 'Commande pour les 60 ans de ma maman. Elle était en larmes tellement le gâteau était beau. Le goût était exceptionnel. Merci infiniment !',
-  },
-  {
-    nom: 'Amina T.',
-    event: 'Baptême',
-    note: 5,
-    texte: 'Super réactive, très professionnelle et le résultat est incroyable. Les empanadas étaient délicieuses aussi. On reviendra pour tous nos événements !',
+    texte: 'Todo estaba increíble, se sentía hecho con mucho amor. ¡Gracias Charo, eres una artista! 🎂',
   },
   {
     nom: 'Laura B.',
-    event: 'Anniversaire enfant',
+    ville: 'Carouge',
     note: 5,
-    texte: 'Gâteau Miraculous pour les 7 ans de ma fille. Elle a hurlé de joie en le voyant ! Aussi beau que sur les photos. Un vrai talent artisanal.',
+    texte: 'Ma fille a hurlé de joie en voyant son gâteau Miraculous ! Aussi beau que délicieux. Merci infiniment Charo 💕',
+  },
+  {
+    nom: 'Carlos M.',
+    ville: 'Meyrin',
+    note: 5,
+    texte: 'El pastel de cumpleaños de mi mamá fue perfecto. Todos preguntaron dónde lo pedimos. ¡Volveremos siempre! 🌟',
   },
 ];
 
 export default function TestimonialsSection() {
   return (
-    <section id="avis" className="py-24 px-5 sm:px-8 bg-white">
+    <section id="avis" className="py-24 px-5 sm:px-8 bg-[#FBF6EF]">
       <div className="max-w-6xl mx-auto">
 
         <motion.div
@@ -42,14 +42,14 @@ export default function TestimonialsSection() {
           className="text-center mb-16"
         >
           <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-[#7B1231]/60 mb-4">
-            Ils nous ont fait confiance
+            Ils nous font confiance
           </p>
           <h2
             className="text-[clamp(30px,5vw,52px)] text-[#1A0A0F]"
             style={{ fontFamily: 'var(--font-heading, serif)', fontWeight: 700, lineHeight: 1.1 }}
           >
             Ce que disent{' '}
-            <span className="italic font-normal">nos clients</span>
+            <span style={{ fontStyle: 'italic', fontWeight: 400 }}>nos clients</span>
           </h2>
         </motion.div>
 
@@ -61,7 +61,7 @@ export default function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.55, delay: i * 0.1 }}
-              className="bg-[#FAF7F2] rounded-3xl p-7 flex flex-col gap-4 border border-[#7B1231]/[0.06] hover:border-[#7B1231]/15 transition-colors"
+              className="bg-white rounded-3xl p-7 flex flex-col gap-4 shadow-sm border border-[#7B1231]/[0.06] hover:border-[#7B1231]/15 hover:-translate-y-0.5 transition-all duration-300"
             >
               <div className="flex gap-0.5">
                 {Array.from({ length: t.note }).map((_, j) => (
@@ -75,11 +75,22 @@ export default function TestimonialsSection() {
               </p>
               <div className="pt-2 border-t border-[#7B1231]/[0.08]">
                 <p className="text-[13px] font-bold text-[#1A0A0F]">{t.nom}</p>
-                <p className="text-[11px] text-[#7B1231]/60 font-medium mt-0.5">{t.event}</p>
+                <p className="text-[11px] text-[#7B1231]/60 font-medium mt-0.5">{t.ville}</p>
               </div>
             </motion.div>
           ))}
         </div>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="text-center text-[13px] text-[#6B5057]/60 mt-10 italic"
+          style={{ fontFamily: 'var(--font-heading, serif)' }}
+        >
+          Gracias por su confianza — merci pour votre confiance 🤍
+        </motion.p>
       </div>
     </section>
   );
