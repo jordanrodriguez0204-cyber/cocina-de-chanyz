@@ -16,6 +16,9 @@ export default function Footer() {
               Gâteaux personnalisés & spécialités péruviennes<br />
               faits maison à Genève.
             </p>
+            <p className="text-[13px] text-white/30 mt-2">
+              Rue Hoffmann 18, Genève
+            </p>
           </div>
 
           {/* Contact rapide */}

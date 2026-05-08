@@ -11,7 +11,7 @@ const navLinks = [
   { href: '#commander',   label: 'Commander' },
 ];
 
-export const WA_NUMBER = '41XXXXXXXXX'; // ← Remplacer par le vrai numéro WhatsApp
+export const WA_NUMBER = '41782139043';
 
 export default function Navbar() {
   const [scrolled, setScrolled]     = useState(false);
