@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -8,6 +8,13 @@ const bodyFont = Inter({
   subsets: ['latin'],
   variable: '--font-body',
   display: 'swap',
+});
+
+const displayFont = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-heading',
+  display: 'swap',
+  style: ['normal', 'italic'],
 });
 
 export const metadata: Metadata = {
@@ -41,7 +48,7 @@ const schema = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={bodyFont.variable}>
+    <html lang="fr" className={`${bodyFont.variable} ${displayFont.variable}`}>
       <head>
         <script
           type="application/ld+json"

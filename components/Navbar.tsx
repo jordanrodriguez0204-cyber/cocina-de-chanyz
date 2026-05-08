@@ -5,9 +5,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
 const navLinks = [
-  { href: '#gateaux',      label: 'Nos Gâteaux' },
-  { href: '#specialites',  label: 'Spécialités' },
-  { href: '#commander',    label: 'Commander' },
+  { href: '#gateaux',     label: 'Gâteaux' },
+  { href: '#specialites', label: 'Spécialités' },
+  { href: '#avis',        label: 'Avis' },
+  { href: '#commander',   label: 'Commander' },
 ];
 
 export const WA_NUMBER = '41XXXXXXXXX'; // ← Remplacer par le vrai numéro WhatsApp
