@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Cocina de Chanyz — Palette bordeaux & crème ── */
+  --color-brand:     #7B1231;   /* Bordeaux principal (logo) */
+  --color-brand-dim: #5C0D23;   /* Bordeaux foncé */
+  --color-gold:      #C9A84C;   /* Or (accents) */
+  --color-ink:       #1A0A0F;   /* Texte quasi-noir chaud */
+  --color-ink-muted: #6B5057;   /* Texte secondaire */
+  --color-surface:   #FFFFFF;
+  --color-bg:        #FAF7F2;   /* Crème ivoire */
+
+  --font-sans:    var(--font-body, system-ui, sans-serif);
+  --font-display: var(--font-heading, system-ui, sans-serif);
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: #FAF7F2;
+    color: #1A0A0F;
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 { font-family: var(--font-display); font-weight: 700; line-height: 1.05; letter-spacing: -0.03em; }
+  h2 { font-family: var(--font-display); font-weight: 700; line-height: 1.1;  letter-spacing: -0.02em; }
+  h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.2;  letter-spacing: -0.015em; }
+  p  { line-height: 1.7; }
+  *  { box-sizing: border-box; }
+}
+
+@layer utilities {
+  .clip-line { overflow: hidden; }
+  .text-gold  { color: #C9A84C; }
+  .bg-bordeaux { background-color: #7B1231; }
+}
