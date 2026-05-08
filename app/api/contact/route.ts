@@ -7,13 +7,13 @@ export const dynamic = 'force-dynamic';
 /* ── À PERSONNALISER PAR CLIENT ── */
 const CONFIG = {
   /* Email où le client reçoit les messages de son formulaire */
-  clientEmail: 'info@DOMAINE-CLIENT.ch',
+  clientEmail: 'pinedomariarosario@gmail.com',
 
   /* Ton email — tu reçois une copie de chaque lead */
   agencyEmail: 'contact@atelierdigitalgeneve.ch',
 
   /* Nom qui apparaît dans l'objet des emails */
-  commerceName: 'NOM DU COMMERCE',
+  commerceName: 'Cocina de Chanyz',
 
   /* Domaine vérifié sur Resend (mail.atelierdigitalgeneve.ch ou domaine client) */
   fromEmail: 'noreply@mail.atelierdigitalgeneve.ch',
