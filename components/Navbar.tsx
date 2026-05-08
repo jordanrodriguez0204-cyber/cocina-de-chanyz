@@ -58,12 +58,12 @@ export default function Navbar() {
             </button>
 
             {/* Nav desktop */}
-            <nav className="hidden md:flex items-center gap-1">
+            <nav className="hidden md:flex items-center gap-0.5">
               {navLinks.map((link) => (
                 <button
                   key={link.href}
                   onClick={() => handleNav(link.href)}
-                  className={`px-3.5 py-2 text-[13px] font-medium rounded-lg transition-colors duration-150 ${
+                  className={`px-3 py-2 text-[12.5px] font-medium rounded-lg transition-colors duration-150 ${
                     scrolled
                       ? 'text-[#6B5057] hover:text-[#7B1231]'
                       : 'text-white/80 hover:text-white'

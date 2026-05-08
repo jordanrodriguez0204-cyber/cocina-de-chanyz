@@ -42,7 +42,7 @@ export default function InstagramSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="grid grid-cols-3 md:grid-cols-6 gap-2 sm:gap-3 mb-10"
+          className="grid grid-cols-3 md:grid-cols-6 gap-1.5 sm:gap-3 mb-10"
         >
           {posts.map((post, i) => (
             <div

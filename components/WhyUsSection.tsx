@@ -57,7 +57,7 @@ export default function WhyUsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.55, delay: i * 0.1 }}
-              className="group text-center p-8 rounded-3xl bg-[#FAF7F2] hover:bg-[#7B1231]/5 border border-transparent hover:border-[#7B1231]/10 transition-all duration-300"
+              className="group text-center p-6 sm:p-8 rounded-3xl bg-[#FAF7F2] hover:bg-[#7B1231]/5 border border-transparent hover:border-[#7B1231]/10 transition-all duration-300"
             >
               <span className="text-4xl block mb-5">{r.icon}</span>
               <h3 className="text-[15px] font-bold text-[#1A0A0F] mb-3">{r.titre}</h3>

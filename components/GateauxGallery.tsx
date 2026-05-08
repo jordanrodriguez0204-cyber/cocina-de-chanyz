@@ -67,12 +67,12 @@ export default function GateauxGallery() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.35 }}
-            className="columns-2 md:columns-3 gap-4"
+            className="columns-2 md:columns-3 gap-3 sm:gap-4"
           >
             {filtered.map((creation, i) => (
               <div
                 key={creation.id}
-                className="break-inside-avoid mb-4 group relative overflow-hidden rounded-2xl bg-[#F0EAE2] cursor-pointer"
+                className="break-inside-avoid mb-3 sm:mb-4 group relative overflow-hidden rounded-xl sm:rounded-2xl bg-[#F0EAE2] cursor-pointer"
               >
                 <div className={`relative w-full ${aspectRatios[i % aspectRatios.length]}`}>
                   <Image

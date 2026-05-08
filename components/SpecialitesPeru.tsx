@@ -112,7 +112,7 @@ export default function SpecialitesPeru() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-14 flex flex-col sm:flex-row items-center justify-between gap-6 pt-10 border-t border-white/10"
+          className="mt-14 flex flex-col sm:flex-row items-center justify-between gap-5 pt-10 border-t border-white/10 text-center sm:text-left"
         >
           <p className="text-white/60 text-[15px] max-w-sm leading-relaxed">
             Nous préparons en grande quantité pour vos événements et apéritifs.
@@ -121,7 +121,7 @@ export default function SpecialitesPeru() {
             href={`https://wa.me/${WA_NUMBER}?text=Bonjour%20Chanyz%2C%20je%20souhaite%20commander%20des%20sp%C3%A9cialit%C3%A9s%20p%C3%A9ruviennes%20%F0%9F%AB%94`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 shrink-0 bg-white text-[#7B1231] text-[14px] font-bold px-7 py-3.5 rounded-full hover:bg-white/90 hover:-translate-y-0.5 transition-all duration-200 shadow-xl shadow-black/20"
+            className="inline-flex items-center justify-center gap-2.5 shrink-0 w-full sm:w-auto bg-white text-[#7B1231] text-[14px] font-bold px-7 py-3.5 rounded-full hover:bg-white/90 hover:-translate-y-0.5 transition-all duration-200 shadow-xl shadow-black/20"
           >
             Commander sur WhatsApp
           </a>
