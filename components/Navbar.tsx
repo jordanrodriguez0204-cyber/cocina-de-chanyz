@@ -44,9 +44,20 @@ export default function Navbar() {
             {/* Logo */}
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="flex items-center"
+              className="flex items-center gap-2.5"
             >
-              <div className="relative w-[150px] h-[50px]">
+              {/* Icône seule — visible sur mobile */}
+              <div className="relative w-[34px] h-[34px] sm:hidden shrink-0">
+                <Image
+                  src={scrolled ? '/images/icon-bordeaux.png' : '/images/icon-blanc.png'}
+                  alt="Cocina de Chanyz"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              {/* Logo complet — visible sur sm+ */}
+              <div className="relative hidden sm:block w-[155px] h-[52px]">
                 <Image
                   src={scrolled ? '/images/logo-bordeaux.png' : '/images/logo-blanc.png'}
                   alt="Cocina de Chanyz"

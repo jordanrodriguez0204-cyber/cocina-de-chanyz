@@ -21,6 +21,11 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-[#7B1231]/15" />
       </div>
 
+      {/* Masque inca décoratif — outline très subtil, côté droit */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/3 opacity-[0.07] pointer-events-none select-none hidden sm:block">
+        <Image src="/images/masque-inca-outline.png" alt="" width={520} height={520} />
+      </div>
+
       {/* Contenu */}
       <div className="relative z-10 flex flex-col items-center text-center px-5 max-w-3xl mx-auto pt-24 pb-16">
 
@@ -31,7 +36,10 @@ export default function HeroSection() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="mb-8"
         >
-          <div className="relative w-[220px] sm:w-[280px] h-[70px] sm:h-[90px] mx-auto">
+          <div
+            className="relative w-[280px] sm:w-[360px] h-[88px] sm:h-[115px] mx-auto"
+            style={{ filter: 'drop-shadow(0 0 28px rgba(255,255,255,0.18)) drop-shadow(0 2px 12px rgba(0,0,0,0.35))' }}
+          >
             <Image src="/images/logo-blanc.png" alt="Cocina de Chanyz" fill className="object-contain" priority />
           </div>
         </motion.div>

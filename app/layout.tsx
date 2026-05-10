@@ -25,6 +25,10 @@ export const metadata: Metadata = {
   },
   description: 'Gâteaux personnalisés sur commande et spécialités péruviennes faites maison à Genève. Mariages, anniversaires, événements. Commandez via WhatsApp.',
   metadataBase: new URL('https://cocina-de-chanyz.vercel.app'),
+  icons: {
+    icon: '/images/icon-bordeaux.png',
+    apple: '/images/icon-bordeaux.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'fr_CH',
