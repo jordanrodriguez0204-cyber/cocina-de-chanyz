@@ -2,12 +2,13 @@
 
 import { motion } from 'framer-motion';
 import { WA_NUMBER } from './Navbar';
+import DevisForm from './DevisForm';
 
 const steps = [
   {
     num: '01',
     titre: 'Contactez-nous',
-    desc: 'Envoyez votre idée, la date et le nombre de personnes sur WhatsApp. On vous répond sous 24h.',
+    desc: 'Remplissez le formulaire ci-dessous ou écrivez-nous sur WhatsApp. On vous répond sous 24h.',
   },
   {
     num: '02',
@@ -17,13 +18,13 @@ const steps = [
   {
     num: '03',
     titre: 'Récupération',
-    desc: "Votre commande est prête à la date convenue. Il ne reste plus qu'à régaler vos proches !",
+    desc: "Votre commande est prête à la date convenue. Retrait à Genève ou livraison selon accord.",
   },
 ];
 
 const infos = [
   { icon: '⏰', titre: 'Délai minimum', desc: "5 jours à l'avance pour les gâteaux. Plus tôt pour les mariages." },
-  { icon: '📍', titre: 'Retrait Genève', desc: 'Retrait sur rendez-vous. Livraison possible selon localisation.' },
+  { icon: '📍', titre: 'Retrait & Livraison', desc: 'Retrait sur rendez-vous à Genève. Livraison possible sur Genève et alentours — frais précisés dans votre devis.' },
   { icon: '💬', titre: 'Devis gratuit', desc: 'Sans engagement — réponse sous 24h garantie.' },
 ];
 
@@ -99,7 +100,7 @@ export default function CommanderSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-center"
+          className="text-center mb-20"
         >
           <a
             href={`https://wa.me/${WA_NUMBER}?text=Bonjour%20Chanyz%2C%20je%20voudrais%20commander%20un%20g%C3%A2teau%20%F0%9F%8E%82%0A%0ADate%20souhait%C3%A9e%20%3A%20%0ATh%C3%A8me%2Fid%C3%A9e%20%3A%20%0ANombre%20de%20personnes%20%3A%20`}
@@ -117,6 +118,38 @@ export default function CommanderSection() {
             Réponse sous 24h · Devis gratuit · Sans engagement
           </p>
         </motion.div>
+
+        {/* Divider + formulaire de devis */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="flex items-center gap-4 mb-12">
+            <div className="flex-1 h-[1px] bg-[#7B1231]/10" />
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-[#7B1231]/50">
+              Ou remplissez le formulaire
+            </p>
+            <div className="flex-1 h-[1px] bg-[#7B1231]/10" />
+          </div>
+
+          <div className="text-center mb-10">
+            <h3
+              className="text-[clamp(22px,3.5vw,36px)] text-[#1A0A0F] mb-3"
+              style={{ fontFamily: 'var(--font-heading, serif)', fontWeight: 700, lineHeight: 1.15 }}
+            >
+              Demander un{' '}
+              <span style={{ fontStyle: 'italic', fontWeight: 400, color: '#7B1231' }}>devis gratuit</span>
+            </h3>
+            <p className="text-[14px] text-[#6B5057] max-w-md mx-auto">
+              Décrivez votre projet, on vous répond sous 24h avec un devis personnalisé.
+            </p>
+          </div>
+
+          <DevisForm />
+        </motion.div>
+
       </div>
     </section>
   );

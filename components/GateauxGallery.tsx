@@ -38,7 +38,7 @@ export default function GateauxGallery() {
             <span style={{ fontStyle: 'italic', fontWeight: 400 }}>une histoire unique</span>
           </h2>
           <p className="text-[15px] text-[#6B5057] mt-5 max-w-md mx-auto">
-            Tous nos gâteaux sont réalisés sur commande, avec des ingrédients frais et beaucoup d&apos;amour.
+            Tous nos gâteaux sont réalisés sur commande, avec des ingrédients frais et beaucoup de soin.
           </p>
         </motion.div>
 

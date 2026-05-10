@@ -72,8 +72,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-white/75 text-[16px] sm:text-[18px] leading-relaxed mb-10 max-w-lg"
         >
-          Préparés avec amour pour vos moments spéciaux.<br className="hidden sm:block" />
-          <span className="text-white/55 text-[14px] sm:text-[15px] italic">Une touche latino dans chaque création.</span>
+          Préparés avec soin pour vos moments spéciaux.
         </motion.p>
 
         {/* CTAs */}

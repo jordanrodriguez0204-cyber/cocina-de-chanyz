@@ -52,7 +52,6 @@ export default function NotreHistoireSection() {
               <div className="border-t border-white/20 pt-5 relative z-10">
                 <p className="text-white font-bold text-[15px]">Charo Pinedo</p>
                 <p className="text-white/50 text-[12px] mt-1">Pâtissière · Genève</p>
-                <p className="text-white/40 text-[11px] mt-0.5 tracking-wide uppercase">Née à Lima, Pérou 🇵🇪</p>
               </div>
             </div>
 
@@ -71,7 +70,7 @@ export default function NotreHistoireSection() {
             className="space-y-5"
           >
             <p className="text-[15px] sm:text-[16px] text-[#3D2020] leading-relaxed">
-              Je m&apos;appelle <strong>Charo Pinedo</strong>, je suis née à Lima au Pérou et installée à Genève depuis des années. La cuisine, c&apos;est ma façon de partager l&apos;amour avec les gens que j&apos;aime — et avec vous ! 🍰
+              Je m&apos;appelle <strong>Charo Pinedo</strong>, installée à Genève depuis de nombreuses années. La cuisine, c&apos;est ma façon de partager ce qui me tient à cœur — avec ma famille, et avec vous ! 🍰
             </p>
             <p className="text-[15px] sm:text-[16px] text-[#3D2020] leading-relaxed">
               Depuis petite, j&apos;ai grandi entourée des parfums du marché, des recettes de ma mamá, et de la fierté de la cuisine péruvienne. Ici à Genève, j&apos;ai eu envie de partager ce petit bout de chez moi.

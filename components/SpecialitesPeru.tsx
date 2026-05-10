@@ -7,31 +7,31 @@ import { WA_NUMBER } from './Navbar';
 const plats = [
   {
     nom: 'Empanadas maison',
-    description: 'Feuilletées et dorées à souhait, garnies à la viande ou au fromage. Parfaites pour vos apéritifs et événements.',
+    description: 'Feuilletées et dorées à souhait, garnies à la viande ou au fromage. Parfaites pour vos apéritifs et événements — préparées en grande quantité sur commande.',
     image: '/images/plats/empanadas.jpg',
-    disponible: true,
     tag: 'Disponible',
+    tagColor: 'bg-[#C9A84C]',
   },
   {
-    nom: 'Ceviche péruvien',
-    description: 'La recette traditionnelle de Lima — poisson frais, citron vert, piment et coriandre. Sur commande.',
+    nom: 'Causa Limeña',
+    description: "Purée de pomme de terre assaisonnée au citron et au piment jaune, garnie au thon ou au poulet. Un incontournable de la cuisine péruvienne.",
     image: null,
-    disponible: false,
-    tag: 'Bientôt',
+    tag: 'Sur commande',
+    tagColor: 'bg-white/20',
   },
   {
-    nom: 'Lomo Saltado',
-    description: 'Le plat emblématique péruvien. Bœuf sauté aux oignons, tomates et frites, servi avec du riz.',
+    nom: 'Tamales',
+    description: "Préparés à la vapeur dans des feuilles de bananier, fourrés au porc ou au poulet. Une recette transmise de génération en génération.",
     image: null,
-    disponible: false,
-    tag: 'Bientôt',
+    tag: 'Sur commande',
+    tagColor: 'bg-white/20',
   },
   {
     nom: 'Alfajores',
-    description: 'Biscuits sablés fourrés au dulce de leche. Une douceur péruvienne incontournable.',
+    description: 'Biscuits sablés fondants fourrés au dulce de leche. Une douceur maison qui disparaît toujours trop vite.',
     image: null,
-    disponible: false,
-    tag: 'Bientôt',
+    tag: 'Sur commande',
+    tagColor: 'bg-white/20',
   },
 ];
 
@@ -53,7 +53,7 @@ export default function SpecialitesPeru() {
           className="mb-16"
         >
           <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-white/40 mb-4">
-            La cuisine du Pérou
+            Cuisine du Pérou
           </p>
           <h2
             className="text-[clamp(30px,5vw,56px)] text-white"
@@ -67,7 +67,7 @@ export default function SpecialitesPeru() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {plats.map((plat, i) => (
             <motion.div
               key={plat.nom}
@@ -75,33 +75,32 @@ export default function SpecialitesPeru() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.55, delay: i * 0.1 }}
-              className="group rounded-3xl overflow-hidden bg-white/[0.08] border border-white/10 hover:border-white/20 hover:-translate-y-1 transition-all duration-300"
+              className="group rounded-3xl overflow-hidden bg-white/[0.07] border border-white/10 hover:border-white/25 hover:-translate-y-1 transition-all duration-300 flex flex-col sm:flex-row"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
-                {plat.disponible && plat.image ? (
+              {/* Image / placeholder */}
+              <div className="relative sm:w-48 shrink-0 aspect-[4/3] sm:aspect-auto overflow-hidden">
+                {plat.image ? (
                   <Image
                     src={plat.image}
                     alt={plat.nom}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
-                    sizes="(max-width: 640px) 100vw, 25vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-[1.06]"
+                    sizes="(max-width: 640px) 100vw, 192px"
                   />
                 ) : (
-                  <div className="w-full h-full bg-white/5 flex items-center justify-center">
-                    <span className="text-4xl opacity-30">🍽️</span>
+                  <div className="w-full h-full bg-white/[0.06] flex items-center justify-center min-h-[140px]">
+                    <span className="text-5xl opacity-25">🍽️</span>
                   </div>
                 )}
-                <span className={`absolute top-3 right-3 text-[10px] font-bold tracking-wide px-2.5 py-1 rounded-full ${
-                  plat.disponible
-                    ? 'bg-[#C9A84C] text-white'
-                    : 'bg-white/15 text-white/60 border border-white/15'
-                }`}>
+              </div>
+
+              {/* Texte */}
+              <div className="p-6 flex flex-col justify-center gap-2">
+                <span className={`self-start text-[10px] font-bold tracking-wide px-2.5 py-1 rounded-full text-white ${plat.tagColor}`}>
                   {plat.tag}
                 </span>
-              </div>
-              <div className="p-5">
-                <h3 className="text-white font-bold text-[15px] mb-2">{plat.nom}</h3>
-                <p className="text-white/50 text-[12.5px] leading-relaxed">{plat.description}</p>
+                <h3 className="text-white font-bold text-[16px]">{plat.nom}</h3>
+                <p className="text-white/55 text-[13px] leading-relaxed">{plat.description}</p>
               </div>
             </motion.div>
           ))}

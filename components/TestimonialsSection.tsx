@@ -7,25 +7,25 @@ const testimonials = [
     nom: 'Sofia R.',
     ville: 'Genève',
     note: 5,
-    texte: 'Le gâteau était magnifique et délicieux, merci encore ❤️ Toute la famille a adoré, on reviendra c\'est sûr !',
+    texte: 'Le gâteau était vraiment magnifique, et tellement bon ! On a tout mangé avant la fin de la soirée 😅 Merci Charo, toute la famille a adoré.',
   },
   {
     nom: 'Camila T.',
     ville: 'Vernier',
     note: 5,
-    texte: 'Todo estaba increíble, se sentía hecho con mucho amor. ¡Gracias Charo, eres una artista! 🎂',
+    texte: '¡Increíble! Se notaba que estaba hecho con mucho cariño. Todos preguntaban quién lo había preparado 🎂 Gracias Charo, eres una artista.',
   },
   {
     nom: 'Laura B.',
     ville: 'Carouge',
     note: 5,
-    texte: 'Ma fille a hurlé de joie en voyant son gâteau Miraculous ! Aussi beau que délicieux. Merci infiniment Charo 💕',
+    texte: "Ma fille a craqué en voyant son gâteau Miraculous — exactement comme elle l'imaginait. Et délicieux en plus ! On reviendra c'est sûr 💕",
   },
   {
     nom: 'Carlos M.',
     ville: 'Meyrin',
     note: 5,
-    texte: 'El pastel de cumpleaños de mi mamá fue perfecto. Todos preguntaron dónde lo pedimos. ¡Volveremos siempre! 🌟',
+    texte: 'Le gâteau d\'anniversaire de ma maman était parfait. Simple à commander, livré à l\'heure, et tellement savoureux. Je recommande sans hésiter 🌟',
   },
 ];
 
