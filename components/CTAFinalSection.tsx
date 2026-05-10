@@ -18,9 +18,6 @@ export default function CTAFinalSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <div className="flex justify-center mb-6">
-            <Image src="/images/icon-blanc.png" alt="" width={72} height={72} className="opacity-30" />
-          </div>
           <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-white/40 mb-6">
             Commencez maintenant
           </p>

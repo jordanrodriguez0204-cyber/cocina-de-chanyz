@@ -38,9 +38,6 @@ export default function WhyUsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="flex justify-center mb-4">
-            <Image src="/images/icon-bordeaux.png" alt="" width={38} height={38} className="opacity-75" />
-          </div>
           <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-[#7B1231]/60 mb-4">
             Notre différence
           </p>

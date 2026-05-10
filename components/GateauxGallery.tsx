@@ -28,9 +28,6 @@ export default function GateauxGallery() {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <div className="flex justify-center mb-4">
-            <Image src="/images/icon-bordeaux.png" alt="" width={38} height={38} className="opacity-75" />
-          </div>
           <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-[#7B1231]/60 mb-4">
             Nos réalisations
           </p>
@@ -86,9 +83,12 @@ export default function GateauxGallery() {
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
                     sizes="(max-width: 640px) 50vw, 33vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute bottom-0 inset-x-0 p-5 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                    <p className="text-white text-[13px] font-semibold leading-snug">{creation.titre}</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 inset-x-0 p-4 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                    <p className="text-white text-[12px] font-semibold leading-snug mb-0.5">{creation.titre}</p>
+                    {creation.occasion && (
+                      <p className="text-white/65 text-[11px] leading-snug">{creation.occasion}</p>
+                    )}
                   </div>
                 </div>
               </div>
