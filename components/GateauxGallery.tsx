@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { creations, categories } from '@/data/creations';
+
 import type { Categorie } from '@/data/creations';
 import { WA_NUMBER } from './Navbar';
 
@@ -27,6 +28,9 @@ export default function GateauxGallery() {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
+          <div className="flex justify-center mb-4">
+            <Image src="/images/icon-bordeaux.png" alt="" width={38} height={38} className="opacity-75" />
+          </div>
           <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-[#7B1231]/60 mb-4">
             Nos réalisations
           </p>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { WA_NUMBER } from './Navbar';
 
 export default function Footer() {
@@ -11,7 +12,10 @@ export default function Footer() {
 
           {/* Identité */}
           <div className="text-center md:text-left">
-            <p className="font-bold text-[15px] tracking-tight mb-2">Cocina de Chanyz</p>
+            <div className="flex items-center gap-2.5 justify-center md:justify-start mb-2">
+              <Image src="/images/icon-blanc.png" alt="" width={32} height={32} className="opacity-70" />
+              <p className="font-bold text-[15px] tracking-tight">Cocina de Chanyz</p>
+            </div>
             <p className="text-[13px] text-white/40 leading-relaxed max-w-xs">
               Gâteaux personnalisés & spécialités péruviennes<br />
               faits maison à Genève.
